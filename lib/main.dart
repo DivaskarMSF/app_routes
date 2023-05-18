@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
 
           LoginArguments args = settings.arguments as LoginArguments;
 
-        return args == null ? throw Exception('Error: No login Arguments') : buildRoute(LoginPage(arguments: args), settings: settings);
+        return args == null ? throw Exception('Error: No loginn Arguments') : buildRoute(LoginPage(arguments: args), settings: settings);
       case AppRoutes.home:
           const defaultArgs = HomeArguments(userToken: null);
            HomeArguments args = (settings.arguments ?? defaultArgs) as HomeArguments;
